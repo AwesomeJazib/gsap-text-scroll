@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    outline: 1px solid green;
 }
 #sec_heading{
     margin-top: 100vh;
 }
 .image{
-    width: 80%;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -17,3 +17,50 @@
     height: 100%;
     object-fit: cover;
 }
+
+.sec-heading{
+
+}
+
+
+/* styling of click to play video serction */
+
+
+[class^="icon-"]{
+    font-family: 'icomoon';
+}
+
+.video-wrapper {
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    
+}
+
+
+video{
+    width: 50%;
+    height: 50vh;
+    object-fit: cover;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.video_wrapper{
+    position: relative;
+}
+
+.video_wrapper i{
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    color: rgba(194, 192, 194, .5);
+    font-size: calc(2rem + 5vw);
+}
+
+
