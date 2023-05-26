@@ -24,10 +24,6 @@
     object-fit: cover;
 }
 
-.sec-heading{
-
-}
-
 
 /* styling of click to play video serction */
 
@@ -36,29 +32,36 @@
     font-family: 'icomoon';
 }
 
-.video-wrapper {
-    width: 100%;
-    /* height: 100%; */
-    overflow: hidden;
+.video_wrapper {
+    position: relative;
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    display: block;
     
 }
 
 
-video{
+
+.video_wrapper .video_sec{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+/* video{
     width: 80%;
     height: 50vh;
     object-fit: cover;
-    position: relative;
     margin: 0 auto;
     display: block;
-}
+} */
 
 
-.video_wrapper{
-    position: relative;
-}
 
-.video_wrapper i{
+.video_icn{
     font-family: 'icomoon';
     position: absolute;
     top: 50%;
