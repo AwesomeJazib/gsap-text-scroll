@@ -51,13 +51,36 @@
     left: 0;
     object-fit: cover;
 }
-/* video{
-    width: 80%;
-    height: 50vh;
-    object-fit: cover;
-    margin: 0 auto;
-    display: block;
-} */
+
+.video_controls{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_controls button{
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(240, 240, 240, .7);
+    font-size: calc(2rem + 1vw);
+}
+
+
+
+
+.pause_btn{
+    display: none;
+}
+
 
 
 

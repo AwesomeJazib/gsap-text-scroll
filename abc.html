@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Play Pause</title>
+    <style>
+        .container{
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper{
+            background-color: #eeeeee;
+        }
+        .video-inner{
+            position: relative;
+        }
+        .video-inner video{
+            width: 100%;
+        }
+
+        .video-inner .vide-controls{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .4s linear;
+        }
+        .video-inner:hover .vide-controls{
+           opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-wrapper">
+        <div class="container">
+            <div class="video-inner">
+                <video id="stics_video">
+                    <source src="assets/videos/stics.MP4">
+                </video>
+               <div class="vide-controls">
+                   <button id="play_btn">Play</button>
+                   <button id="pause_btn">Pause</button>
+               </div>
+            </div><!-- /.video-inner -->
+        </div><!-- /.container -->
+    </div><!-- /.video-wrapper -->
+
+    <script>
+
+        let playBtn = document.querySelector("#play_btn");
+
+        let pauseBtn = document.querySelector("#pause_btn");
+
+        let videoSec = document.querySelector("#stics_video");
+
+        pauseBtn.style.display="none"
+
+        playBtn.addEventListener("click", function (){
+            videoSec.play();
+            this.style.display="none"
+            pauseBtn.style.display="block"
+        })
+
+        pauseBtn.addEventListener('click', function (){
+            videoSec.pause();
+            this.style.display="none"
+            playBtn.style.display="block"
+        })
+
+
+
+
+
+  
+
+    </script>
+</body>
+</html>

@@ -6,8 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>gsap scroll trigger</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="./theme.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/theme.css">
+        
         
     </head>
     <body>
@@ -17,7 +18,7 @@
 
         <section class="image">
 
-            <img id="img_resize" src="./img/hero-img2.jpg" />
+            <img id="img_resize" src="./assets/img/hero-img3.jpg" />
 
         </section>
 
@@ -26,14 +27,19 @@
 
             <div class="video_wrapper">
 
-                <!-- <iframe id="play" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe> -->
+                <video controls class="video_sec" id="video_contant">
 
-                <video class="video_sec" id="video1" onclick="playpause()" onmouseover="hover_fnct()">
-                    <source type="video/mp4" src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
+                    <source src="./assets/videos/gears-56376_2.mp4">
 
-                    
                 </video>
-                <i id="v_icon" class="icon-play2 video_icn" onclick="hover_fnct()"></i>
+
+                <div id="vid-Controles" class="video_controls">
+
+                    <button id="play-btn"><i class="icon-play2 video_btn"></i></button>
+                    <button id="pause-btn"><i class="icon-pause video_btn"></i></button>
+
+                </div><!-- /.btn_controls -->
+                <!-- <i id="v_icon" class="icon-play2 video_icn" onclick="hover_fnct()"></i> -->
             </div>
 
             
@@ -42,10 +48,20 @@
         </section><!-- /.video_sec -->
         
 
+        
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-            <script src="main.js"></script>
+
+            <script src="./assets/js/main.js"></script>
+        
     </body>
 </html>
+
+
+
+
+
+
+
